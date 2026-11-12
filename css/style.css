@@ -18,12 +18,12 @@
         nav a {
         color: #030303;
         text-decoration: none;
-        padding: 14px 30px;
+        padding: 14px 25px;
         display: block;
         }
        
         nav a:hover {
-        background-color: #fbffb9;
+        background-color: #cabd8a;
         }
         
         nav a.active {
@@ -38,4 +38,24 @@
         font-family: "itc-fenice", Georgia, serif;
         font-weight: 400;
         font-style: normal;
+        }
+        
+        .image-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        }
+
+        .nav-right {
+        margin-left: auto;
+        }
+
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #fbffb9;
+        color: #69585f;
+        text-align: center;
         }
