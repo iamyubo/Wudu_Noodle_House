@@ -1,34 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Wudu Noodle House</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/eov8mfq.css">
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active"> Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-        </ul>
-    </nav>
+
     <style>
-    img {
-        border-radius: 50%
-    }
+        img {
+            border-radius: 50%;
+        }
+
+        .slow-fade {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            animation: fadeInSlowly 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInSlowly {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            color: #69585f;
+        }
+
+        th, td {
+            border: 2px solid #69585f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #69585f;
+            color: white;
+        }
+
+        h1, h2 {
+            color: #69585f;
+            text-align: center;
+        }
+
+        .image-container {
+            text-align: center;
+            padding-bottom: 45px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #69585f;
+        }
     </style>
 </head>
+
 <body>
-    <h1 style="color: #69585f; text-align: center;"> Wudu Noodle House</h1>
-    <h2 style="color: #69585f; text-align: center;">Chinese noodle restaurant located at 14339 NE 20th St, Suite D, Bellevue, WA 98007 <br> Specialized around Sichuan and Chongqing street style noodles and soups, focusing around mala flavor profiles</h2>
-    <h1 style="color: #69585f; text-align: center;">Hours Available</h1>
-    <h2 style="color: #69585f; text-align: center;">Monday – Tuesday: 11:00 AM – 3:00 PM, 5:00 PM – 8:30 PM <br>
-    Wednesday: Closed <br>
-    Thursday – Sunday: 11:00 AM – 3:00 PM, 5:00 PM – 8:30 PM <br></h2>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Wudu Noodle House (雾都小面)</h1>
+    <h2>About Our Restaurant</h2>
+    
+    <p style="text-align: center; color: #69585f;">
+        Chinese noodle restaurant located at 14339 NE 20th St,
+        Suite D, Bellevue, WA 98007.
+        <br>
+        Specialized around Sichuan and Chongqing street-style
+        noodles and soups, focusing on mala flavor profiles.
+    </p>
+
+    <h1>Hours Available</h1>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Hours</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>11:00 AM – 3:00 PM<br>5:00 PM – 8:30 PM</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>11:00 AM – 3:00 PM<br>5:00 PM – 8:30 PM</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>Closed</td>
+        </tr>
+
+        <tr>
+            <td>Thursday – Sunday</td>
+            <td>11:00 AM – 3:00 PM<br>5:00 PM – 8:30 PM</td>
+        </tr>
+    </table>
+
     <div class="image-container">
-    <img src="images/BeefShank.webp">
+        <img src="images/BeefShank.webp" class="slow-fade">
     </div>
-    <div class="footer"><p>(425) 590-9756</p></div>
+
+    <div class="footer">
+        <p>(425) 590-9756</p>
+    </div>
+
 </body>
 </html>

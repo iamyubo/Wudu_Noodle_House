@@ -1,61 +1,187 @@
 
-        nav {
-        background-color: #fbffb9;
-        
-        }
+/* Navigation bar */
+nav {
+    background-color: #fbffb9;
+}
 
-        nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        nav li {
-        margin-right: 20px;
-        }
-        
-        nav a {
-        color: #030303;
-        text-decoration: none;
-        padding: 14px 25px;
-        display: block;
-        }
-       
-        nav a:hover {
-        background-color: #cabd8a;
-        }
-        
-        nav a.active {
-        background-color: #fbffb9;  
-        font-weight: bold;          
-        }
+nav li {
+    margin-right: 20px;
+}
 
-        body {
-        background-color: #fbffb9;
-        display: flex;
-        flex-direction: column;
-        font-family: "itc-fenice", Georgia, serif;
-        font-weight: 400;
-        font-style: normal;
-        }
-        
-        .image-container {
-        display: flex;
-        justify-content: center; 
-        align-items: center;    
-        }
+nav a {
+    color: #030303;
+    text-decoration: none;
+    padding: 14px 25px;
+    display: block;
+}
 
-        .nav-right {
-        margin-left: auto;
-        }
+nav a:hover {
+    background-color: #cabd8a;
+}
 
-        .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #fbffb9;
-        color: #69585f;
-        text-align: center;
-        }
+nav a.active {
+    background-color: #fbffb9;
+    font-weight: bold;
+}
+
+/* Body */
+body {
+    background-color: #fbffb9;
+    display: flex;
+    flex-direction: column;
+    font-family: "itc-fenice", Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    color: #69585f;
+    text-align: center;
+}
+
+h2 {
+    color: #69585f;
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    color: #69585f;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Hours table */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    color: #69585f;
+}
+
+th, td {
+    border: 2px solid #69585f;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #69585f;
+    color: #fbffb9;
+}
+
+tr:nth-child(even) {
+    background-color: #eee8c9;
+}
+
+/* Restaurant image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* Image animation */
+.slow-fade {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    animation: fadeInSlowly 2s ease-in-out forwards;
+}
+
+@keyframes fadeInSlowly {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.nav-right {
+    margin-left: auto;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fbffb9;
+    color: #69585f;
+    text-align: center;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    color: #69585f;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #fffde2;
+    border: 2px solid #69585f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 3px 3px 8px #cabd8a;
+}
+
+.contact-card h2 {
+    color: #69585f;
+    font-size: 22px;
+}
+
+
+.contact-card a {
+    color: #69585f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contact-card a:hover {
+    color: #cabd8a;
+}
+
+.contact-image {
+    padding-bottom: 80px;
+}
+
+.contact-image img {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+}
